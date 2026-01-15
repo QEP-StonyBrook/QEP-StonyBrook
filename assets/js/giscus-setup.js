@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "QEP-StonyBrook/QEP-StonyBrook",
+    "data-repo": "QEP-StonyBrook/QEP-StonyBrook.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
