@@ -18,6 +18,7 @@ profiles:
           `;
         })();
       </script>
+      </div>
 
   - align: left
     image: prof_pic.jpg
