@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+
+<!-- Header/Navbar -->
+{% include header.liquid %}
+
 <div class="post">
   <header class="post-header" role="presentation">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span>
-        {{ site.middle_name }} {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -61,6 +64,7 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Newsletter -->
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
