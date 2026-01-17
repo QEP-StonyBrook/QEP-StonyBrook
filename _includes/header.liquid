@@ -2,18 +2,13 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
-          <img
-            src="{{ '/assets/img/QEP_logo.png' | relative_url }}"
-            alt="QEP"
-            style="height: 36px;"
-          >
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
-      {% endif %}
+      <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
+        <img
+          src="{{ '/assets/img/QEP_logo.png' | relative_url }}"
+          alt="QEP"
+          style="height: 36px;"
+        >
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
