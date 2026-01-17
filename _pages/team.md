@@ -26,7 +26,7 @@ profiles:
       </script>
 
   - align: left
-    image: Jie_Gu.jpg
+    image: Jie_Gu.jpeg
     content: about_Jie_Gu.md
     image_circular: false
     more_info: >
@@ -44,7 +44,7 @@ profiles:
       </script>
 
   - align: left
-    image: Shaswata_Mahern_Sarkar.jpg
+    image: Shaswata_Mahern_Sarkar.jpeg
     content: about_Shaswata_Mahern_Sarkar.md
     image_circular: false
     more_info: >
