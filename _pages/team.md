@@ -44,8 +44,8 @@ profiles:
       </script>
 
   - align: left
-    image: Shaswata_Mahern_Sarkar.jpeg
-    content: about_Shaswata_Mahern_Sarkar.md
+    image: Shaswata_Mahernob_Sarkar.jpeg
+    content: about_Shaswata_Mahernob_Sarkar.md
     image_circular: false
     more_info: >
       <div class="contact-info"></div>
