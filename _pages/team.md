@@ -9,7 +9,7 @@ nav_order: 1
 profiles:
   - align: left
     image: Hyeongrak_Choi.jpeg
-    content: about_einstein.md
+    content: about_HyeongrakChoi.md
     image_circular: false
     more_info: >
       <div class="contact-info"></div>
