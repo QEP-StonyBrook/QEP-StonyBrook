@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: home
 title: Home
 permalink: /
 subtitle: <a href='#'>Stony Brook University</a>.
