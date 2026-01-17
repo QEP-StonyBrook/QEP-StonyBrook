@@ -51,7 +51,7 @@ profiles:
       <div class="contact-info"></div>
       <script>
         (function() {
-          const email = "shaswatamahern" + "." + "sarkar" + "@stonybrook.edu";
+          const email = "shaswatamahern" + "." + "sarkar" + "\n @stonybrook.edu";
           const phone = "(934) 256-3787";
           document.currentScript.previousElementSibling.innerHTML = `
             <p>Light Engineering 150</p>
