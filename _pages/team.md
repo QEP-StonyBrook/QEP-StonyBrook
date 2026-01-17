@@ -8,7 +8,7 @@ nav_order: 1
 
 profiles:
   - align: left
-    image: Hyeongrak_Choi.jpeg
+    image: /assets/img/Hyeongrak_Choi.jpeg
     content: about_einstein.md
     image_circular: false
     more_info: >
