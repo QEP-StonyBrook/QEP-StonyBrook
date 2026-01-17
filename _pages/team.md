@@ -1,3 +1,9 @@
+---
+layout: profiles
+permalink: /team/
+title: Team
+description: members of the lab or group
+nav: true
 nav_order: 1
 
 profiles:
@@ -18,7 +24,6 @@ profiles:
           `;
         })();
       </script>
-      </div>
 
   - align: left
     image: prof_pic.jpg
@@ -28,3 +33,4 @@ profiles:
       <p>555 your office number</p>
       <p>123 your address street</p>
       <p>Your City, State 12345</p>
+---
