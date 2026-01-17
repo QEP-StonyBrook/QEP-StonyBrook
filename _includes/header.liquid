@@ -4,7 +4,11 @@
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
-          {{QEP_logo.png}}
+          <img
+            src="{{ '/assets/img/QEP_logo.png' | relative_url }}"
+            alt="QEP"
+            style="height: 36px;"
+          >
         </a>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
