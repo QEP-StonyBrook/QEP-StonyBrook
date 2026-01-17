@@ -1,6 +1,6 @@
 ---
 layout: about
-title: QEP
+title: Home
 permalink: /
 subtitle: <a href='#'>Stony Brook University</a>.
 
