@@ -2,11 +2,7 @@
 layout: home
 title: Home
 permalink: /
-subtitle: <a href='#'>Stony Brook University</a>.
-
-profile:
-  align: center
-  image: prof_pic.jpg
+subtitle: <a href='https://www.stonybrook.edu/electrical/'>Stony Brook University</a>.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
