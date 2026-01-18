@@ -22,8 +22,34 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div class="home-figures">
+  <div class="home-figure-card">
+    <img src="/assets/img/1.jpg" alt="Figure 1" loading="lazy" />
+    <div class="home-figure-caption">
+      <div class="home-figure-title">Figure 1 title</div>
+      <div class="home-figure-text">
+        2–3 sentences describing what this figure shows, why it matters, and what the viewer should notice.
+      </div>
+    </div>
+  </div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+  <div class="home-figure-card">
+    <img src="/assets/img/2.jpg" alt="Figure 2" loading="lazy" />
+    <div class="home-figure-caption">
+      <div class="home-figure-title">Figure 2 title</div>
+      <div class="home-figure-text">
+        2–3 sentences describing the key message, methods/approach, or the main result represented in this panel.
+      </div>
+    </div>
+  </div>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+  <div class="home-figure-card">
+    <img src="/assets/img/3.jpg" alt="Figure 3" loading="lazy" />
+    <div class="home-figure-caption">
+      <div class="home-figure-title">Figure 3 title</div>
+      <div class="home-figure-text">
+        2–3 sentences describing the application, system view, or impact—keep it concrete and outcome-oriented.
+      </div>
+    </div>
+  </div>
+</div>
