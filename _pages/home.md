@@ -22,9 +22,9 @@ latest_posts:
   <div class="home-figure-card">
     <img src="/assets/img/main_QN.png" alt="Figure 1" loading="lazy" />
     <div class="home-figure-caption">
-      <div class="home-figure-title">Figure 1 title</div>
+      <div class="home-figure-title">Quantum Network</div>
       <div class="home-figure-text">
-        2–3 sentences describing what this figure shows, why it matters, and what the viewer should notice.
+        Scalable and fault-tolerant quantum network.
       </div>
     </div>
   </div>
