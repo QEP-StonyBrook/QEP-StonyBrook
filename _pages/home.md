@@ -24,7 +24,7 @@ latest_posts:
     <div class="home-figure-caption">
       <div class="home-figure-title">Quantum Network</div>
       <div class="home-figure-text">
-        Scalable and fault-tolerant quantum network.
+        Scalable and fault-tolerant quantum network with photonic integrated circuits.
       </div>
     </div>
   </div>
@@ -32,9 +32,9 @@ latest_posts:
   <div class="home-figure-card">
     <img src="/assets/img/main_QC.jpg" alt="Figure 2" loading="lazy" />
     <div class="home-figure-caption">
-      <div class="home-figure-title">Figure 2 title</div>
+      <div class="home-figure-title">Quantum Computing and Error Correction</div>
       <div class="home-figure-text">
-        2–3 sentences describing the key message, methods/approach, or the main result represented in this panel.
+        Solid-state quantum computing with spins in solids and CMOS technology.
       </div>
     </div>
   </div>
