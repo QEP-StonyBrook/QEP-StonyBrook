@@ -8,14 +8,21 @@
   margin: 1.25rem 0 0 0;
 }
 
+/* Control width at the CARD level (not the image) */
+.home-figure-card {
+  max-width: 210px;     /* safe for 3-up layout in narrow content */
+  margin: 0 auto;       /* center card within grid column */
+  text-align: center;   /* academic, clean look */
+}
+
 .home-figure-card img {
-  width: 100%;
-  max-width: 280px;
+  width: 100%;          /* fill the card */
   height: auto;
   display: block;
   border-radius: 0.75rem;
 }
 
+/* Caption styling */
 .home-figure-caption {
   margin-top: 0.75rem;
 }
@@ -30,8 +37,13 @@
   line-height: 1.4;
 }
 
+/* Mobile: stack vertically */
 @media (max-width: 900px) {
   .home-figures {
     grid-template-columns: 1fr;
+  }
+
+  .home-figure-card {
+    max-width: 320px;   /* allow larger figures on mobile */
   }
 }
