@@ -1,22 +1,22 @@
-/* Custom styles for the Home page 3-figure layout */
+/* Custom styles for the Home page: 1 × 3 figure grid */
 
 .home-figures {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr); /* 1 row, 3 columns */
+  grid-auto-rows: auto;
+  column-gap: 1.25rem;
   align-items: start;
   margin: 1.25rem 0 0 0;
 }
 
-/* Control width at the CARD level (not the image) */
+/* Each figure occupies one column */
 .home-figure-card {
-  max-width: 210px;     /* safe for 3-up layout in narrow content */
-  margin: 0 auto;       /* center card within grid column */
-  text-align: center;   /* academic, clean look */
+  width: 100%;
 }
 
+/* Image fills its column but does NOT force overflow */
 .home-figure-card img {
-  width: 100%;          /* fill the card */
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 0.75rem;
@@ -41,9 +41,5 @@
 @media (max-width: 900px) {
   .home-figures {
     grid-template-columns: 1fr;
-  }
-
-  .home-figure-card {
-    max-width: 320px;   /* allow larger figures on mobile */
   }
 }
