@@ -30,7 +30,7 @@ latest_posts:
   </div>
 
   <div class="home-figure-card">
-    <img src="/assets/img/2.jpg" alt="Figure 2" loading="lazy" />
+    <img src="/assets/img/main_QC.jpg" alt="Figure 2" loading="lazy" />
     <div class="home-figure-caption">
       <div class="home-figure-title">Figure 2 title</div>
       <div class="home-figure-text">
