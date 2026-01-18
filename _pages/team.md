@@ -31,7 +31,7 @@ profiles:
     content: about_Jie_Gu.md
     image_circular: false
     more_info: >
-      <div class="contact-info"></div>
+      <div class="contact-info" style="font-size: 0.85rem;"></div>
       <script>
         (function() {
           const email = "jie" + "." + "gu" + "@stonybrook.edu";
@@ -49,7 +49,7 @@ profiles:
     content: about_Shaswata_Mahernob_Sarkar.md
     image_circular: false
     more_info: >
-      <div class="contact-info"></div>
+      <div class="contact-info" style="font-size: 0.85rem;"></div>
       <script>
         (function() {
           const email = "shaswatamahern" + "." + "sarkar" + "\n @stonybrook.edu";
