@@ -37,9 +37,9 @@ profiles:
           const email = "jie" + "." + "gu" + "@stonybrook.edu";
           const phone = "(934) 451-9359";
           document.currentScript.previousElementSibling.innerHTML = `
-            <p>Light Engineering 150</p>
-            <p>${email}</p>
-            <p>${phone}</p>
+            <p style="margin: 0;">Light Engineering 150</p>
+            <p style="margin: 0;">${email}</p>
+            <p style="margin: 0;">${phone}</p>
           `;
         })();
       </script>
@@ -55,9 +55,9 @@ profiles:
           const email = "shaswatamahern" + "." + "sarkar" + "\n @stonybrook.edu";
           const phone = "(934) 256-3787";
           document.currentScript.previousElementSibling.innerHTML = `
-            <p>Light Engineering 150</p>
-            <p>${email}</p>
-            <p>${phone}</p>
+            <p style="margin: 0;">Light Engineering 150</p>
+            <p style="margin: 0;">${email}</p>
+            <p style="margin: 0;">${phone}</p>
           `;
         })();
       </script>
