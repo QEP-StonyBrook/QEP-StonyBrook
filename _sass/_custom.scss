@@ -1,8 +1,8 @@
-/* Custom styles for the Home page: 1 × 3 figure grid */
+/* Custom styles for the Home page: 4 × 1 figure grid */
 
 .home-figures {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 1 row, 3 columns */
+  grid-template-columns: repeat(4, 1fr); /* 1 row, 3 columns */
   grid-auto-rows: auto;
   column-gap: 1.25rem;
   align-items: start;
@@ -17,7 +17,7 @@
 /* Image fills its column but does NOT force overflow */
 .home-figure-card img {
   width: 100%;
-  height: 600px;
+  height: 450px;
   object-fit: cover;
   object-position: center;
   display: block;
