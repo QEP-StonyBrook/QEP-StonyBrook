@@ -48,7 +48,6 @@ latest_posts:
       </div>
     </div>
   </div>
-</div>
 
   <div class="home-figure-card">
     <img src="/assets/img/4.jpg" alt="Figure 4" loading="lazy" />
