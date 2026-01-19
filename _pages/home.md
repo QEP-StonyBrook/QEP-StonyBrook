@@ -49,3 +49,14 @@ latest_posts:
     </div>
   </div>
 </div>
+
+  <div class="home-figure-card">
+    <img src="/assets/img/4.jpg" alt="Figure 4" loading="lazy" />
+    <div class="home-figure-caption">
+      <div class="home-figure-title">Figure 4 title</div>
+      <div class="home-figure-text">
+        2–3 sentences describing the application, system view, or impact—keep it concrete and outcome-oriented.
+      </div>
+    </div>
+  </div>
+</div>
