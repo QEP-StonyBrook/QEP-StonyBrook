@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post", style="margin-top: 40px;">
+<div class="post">
   <header class="post-header" role="presentation">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -16,7 +16,7 @@ layout: default
 
   <article>
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix", style="margin-top: 40px;">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
