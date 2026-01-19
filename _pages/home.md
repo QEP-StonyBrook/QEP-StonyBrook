@@ -42,9 +42,9 @@ latest_posts:
   <div class="home-figure-card">
     <img src="/assets/img/3.jpg" alt="Figure 3" loading="lazy" />
     <div class="home-figure-caption">
-      <div class="home-figure-title">Figure 3 title</div>
+      <div class="home-figure-title">Quantum Sensing</div>
       <div class="home-figure-text">
-        2–3 sentences describing the application, system view, or impact—keep it concrete and outcome-oriented.
+        Quantum magnetometer for magNav. Entanglement-assistend non-local sensing.
       </div>
     </div>
   </div>
@@ -52,9 +52,9 @@ latest_posts:
   <div class="home-figure-card">
     <img src="/assets/img/4.jpg" alt="Figure 4" loading="lazy" />
     <div class="home-figure-caption">
-      <div class="home-figure-title">Figure 4 title</div>
+      <div class="home-figure-title">Quantum Photonics</div>
       <div class="home-figure-text">
-        2–3 sentences describing the application, system view, or impact—keep it concrete and outcome-oriented.
+        Visible photonic integrated circuits (PICs). Extreme light-matter interaction.
       </div>
     </div>
   </div>
