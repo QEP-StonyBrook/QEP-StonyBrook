@@ -50,7 +50,7 @@ latest_posts:
   </div>
 
   <div class="home-figure-card">
-    <img src="/assets/img/4.jpg" alt="Figure 4" loading="lazy" />
+    <img src="/assets/img/main_QP.png" alt="Figure 4" loading="lazy" />
     <div class="home-figure-caption">
       <div class="home-figure-title">Quantum Photonics</div>
       <div class="home-figure-text">
