@@ -2,7 +2,7 @@
 layout: page
 title: Devices
 permalink: /devices/
-nav: true
+nav: false
 nav_order: 
 display_categories: 
 horizontal: false
