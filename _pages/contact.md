@@ -8,7 +8,7 @@ nav_order: 7
 ---
 
 <br>
-### Hyeongrak "Chuck" Choi
+### Hyeongrak "Chuck" Choi - [CV](https://qep-stonybrook.github.io/cv/)
 
 Assistant Professor\
 Electrical and Computer Engineering\
