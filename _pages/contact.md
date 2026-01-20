@@ -7,6 +7,7 @@ nav: true
 nav_order: 7
 ---
 
+<br>
 ### Hyeongrak "Chuck" Choi
 
 Assistant Professor\
