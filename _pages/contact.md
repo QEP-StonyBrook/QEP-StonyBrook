@@ -2,11 +2,27 @@
 layout: page
 permalink: /contact/
 title: Contact
-description: Contact information
+description: 
 nav: true
 nav_order: 7
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+###Hyeongrak "Chuck" Choi
 
-Organize your courses by years, topics, or universities, however you like!
+Assistant Professor\
+Electrical and Computer Engineering\
+Stony Brook University
+
+Light Engineering 265\
+Stony Brook University, Stony Brook, NY 11794-2350\
+hyeongrak.choi@stonybrook.edu\
+(617)335-5420
+
+###Electrical and Computer Engineering Department
+
+Light Engineering 273\
+Stony Brook University, Stony Brook, NY 11794-2350\
+ecegradcoordinator@stonybrook.edu\
+ECEundergradCoordinator@stonybrook.edu\
+Phone: 631-632-8400\
+Fax: 631-632-8494
