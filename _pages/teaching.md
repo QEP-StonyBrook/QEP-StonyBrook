@@ -7,8 +7,6 @@ nav: true
 nav_order: 4
 ---
 
-<br>
-## ESE332 Quantum Mechanics for Engineers
-
-<br>
-## ESE523 Quantum Computing and Applications
+2024 Fall:   ESE332 Quantum Mechanics for Engineers\
+2025 Spring: ESE523 Quantum Computing and Applications\
+2025 Fall:   ESE332 Quantum Mechanics for Engineers\
