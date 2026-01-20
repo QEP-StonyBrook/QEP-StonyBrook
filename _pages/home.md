@@ -40,7 +40,7 @@ latest_posts:
   </div>
 
   <div class="home-figure-card">
-    <img src="/assets/img/3.jpg" alt="Figure 3" loading="lazy" />
+    <img src="/assets/img/main_QS.jpg" alt="Figure 3" loading="lazy" />
     <div class="home-figure-caption">
       <div class="home-figure-title">Quantum Sensing</div>
       <div class="home-figure-text">
