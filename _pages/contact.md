@@ -7,7 +7,7 @@ nav: true
 nav_order: 7
 ---
 
-###Hyeongrak "Chuck" Choi
+### Hyeongrak "Chuck" Choi
 
 Assistant Professor\
 Electrical and Computer Engineering\
@@ -18,7 +18,7 @@ Stony Brook University, Stony Brook, NY 11794-2350\
 hyeongrak.choi@stonybrook.edu\
 (617)335-5420
 
-###Electrical and Computer Engineering Department
+### Electrical and Computer Engineering Department
 
 Light Engineering 273\
 Stony Brook University, Stony Brook, NY 11794-2350\
