@@ -10,20 +10,6 @@ profiles:
     image: Hyeongrak_Choi.jpeg
     content: about_Hyeongrak_Choi.md
     image_circular: false
-    more_info: >
-      <div class="contact-info" style="font-size: 0.85rem;"></div>
-      <script>
-        (function() {
-          const email = "hyeongrak" + "." + "choi" + "@stonybrook.edu";
-          const phone = "(617) 335-5420";
-          // Added style='margin: 0' to keep the small text compact
-          document.currentScript.previousElementSibling.innerHTML = `
-            <p style="margin: 0;">Light Engineering 265</p>
-            <p style="margin: 0;">${email}</p>
-            <p style="margin: 0;">${phone}</p>
-          `;
-        })();
-      </script>
 
   - align: left
     image: Jie_Gu.jpeg
