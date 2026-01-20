@@ -8,6 +8,6 @@ BS (Electrical Engineering and Computer Science), Seoul National University (201
 
 <div style="text-align: right;">
   Office: Light Engineering 265 <br>
-  Email: hyeongrak.choi@stonybrook.edu
+  Email: hyeongrak.choi@stonybrook.edu <br>
   Phone: (617)335-5420
 </div>
