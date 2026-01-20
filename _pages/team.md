@@ -20,19 +20,6 @@ profiles:
     image: Shaswata_Mahernob_Sarkar.jpeg
     content: about_Shaswata_Mahernob_Sarkar.md
     image_circular: false
-    more_info: >
-      <div class="contact-info" style="font-size: 0.85rem;"></div>
-      <script>
-        (function() {
-          const email = "shaswatamahern" + "." + "sarkar" + "\n @stonybrook.edu";
-          const phone = "(934) 256-3787";
-          document.currentScript.previousElementSibling.innerHTML = `
-            <p style="margin: 0;">Light Engineering 150</p>
-            <p style="margin: 0;">${email}</p>
-            <p style="margin: 0;">${phone}</p>
-          `;
-        })();
-      </script>
 ---
 
 ## Undergraduate Interns
