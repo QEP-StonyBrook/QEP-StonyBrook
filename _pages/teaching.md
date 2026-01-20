@@ -8,7 +8,7 @@ nav_order: 4
 ---
 
 <br>
-ESE332 Quantum Mechanics for Engineers
+## ESE332 Quantum Mechanics for Engineers
 
 <br>
-ESE523 Quantum Computing and Applications
+## ESE523 Quantum Computing and Applications
