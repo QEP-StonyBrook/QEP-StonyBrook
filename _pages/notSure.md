@@ -1,10 +1,10 @@
 ---
 layout: page
-title: notSure
-permalink: /notSure/
+title: Devices
+permalink: /devices/
 nav: true
-nav_order: 6
-display_categories: [work, fun]
+nav_order: 
+display_categories: 
 horizontal: false
 ---
 
