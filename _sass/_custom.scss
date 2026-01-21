@@ -53,8 +53,8 @@
 }
 
 .post-header-logo {
-  height: 56px;   /* adjust if needed */
-  max-height: 56px;
+  height: 120px;   /* adjust if needed */
+  max-height: 120px;
   width: auto;
   flex-shrink: 0;
   object-fit: contain;
@@ -70,8 +70,8 @@
     align-items: flex-start;
   }
   .post-header-logo {
-    height: 40px;
-    max-height: 40px;
+    height: 100px;
+    max-height: 100px;
     align-self: flex-end;  /* keeps it right-aligned on mobile */
     margin-top: 0.5rem;
   }
