@@ -5,10 +5,3 @@ Jie Gu is a PhD student in Computer Engineering at Stony Brook University, havin
 PhD (Computer Engineering), Stony Brook University (2023-Current)\
 M.Sc. (Condensed Matter Physics), Nanjing University (2023)\
 B.Sc. (Physics), Nanjing University (2020)
-
-
-<div style="text-align: right;">
-  Office: Light Engineering 150 <br>
-  Email: jie.gu@stonybrook.edu <br>
-  Phone: (934)451-9359
-</div>
