@@ -1,62 +1,66 @@
 /******************************************************************************
- * Profile / Team
+ * Profile / Team (scoped to profiles layout only)
  ******************************************************************************/
 
-/* New flex row wrapper */
-.profile-row {
-  display: flex;
-  align-items: stretch;
-  gap: 1.5rem;
-}
-
-/* Image column */
-.profile-image {
-  flex: 0 0 30%;
-  max-width: 30%;
-}
-
-/* IMPORTANT: actually scale the image (and figure wrapper) */
-.profile-image figure {
-  margin: 0;          // figure.liquid often wraps images in <figure>
-}
-
-.profile-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Text column */
-.profile-content {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.profile-text {
-  flex: 1 1 auto;
-}
-
-.profile-contact {
-  margin-top: auto;
-  text-align: right;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive stacking */
-@media (max-width: 576px) {
+body.layout-profiles {
+  /* New flex row wrapper */
   .profile-row {
-    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    gap: 1.5rem;
   }
 
+  /* Image column */
   .profile-image {
-    flex: 0 0 auto;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  /* IMPORTANT: constrain wrapper + scale image */
+  .profile-image figure {
+    width: 100%;
+    margin: 0; // figure.liquid often wraps images in <figure>
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
     max-width: 100%;
   }
 
+  /* Text column */
+  .profile-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .profile-text {
+    flex: 1 1 auto;
+  }
+
   .profile-contact {
-    text-align: left;
+    margin-top: auto;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* Responsive stacking */
+  @media (max-width: 576px) {
+    .profile-row {
+      flex-direction: column;
+    }
+
+    .profile-image {
+      flex: 0 0 auto;
+      max-width: 100%;
+    }
+
+    .profile-contact {
+      text-align: left;
+    }
   }
 }
