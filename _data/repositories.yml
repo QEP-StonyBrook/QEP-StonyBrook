@@ -5,20 +5,26 @@ repo_description_lines_max: 2
 
 github_repos:
   - name: Quantum-Engineering-and-Photonics/Q-CHARM
-    description: "Room-temperature CLSM / micro-PL platform (hardware + MATLAB GUI) for rapid quantum-emitter characterization."
+    description: "Quantum Confocal High-throughput Automated Readout and Microscopy (Q-CHARM) platform for automated quantum emitter characterization."
+
   - name: Quantum-Engineering-and-Photonics/LoQRaS
-    description: "Lightweight QEC-aware routing and scheduling tools for long-distance quantum networks."
+    description: "Logical Qubit Routing and Layout for fault-tolerant quantum computing on surface-code architectures."
+
   - name: Quantum-Engineering-and-Photonics/LoQRaS-Stabilizer
-    description: "Stabilizer-based simulation components used in LoQRaS for QEC-aware network analysis."
+    description: "Stabilizer-based logical qubit routing and layout framework for surface-code fault-tolerant quantum computing."
+
   - name: Quantum-Engineering-and-Photonics/QUARC-PG
-    description: "Protocol and algorithm development for quantum-assisted routing/control (QUARC) workflows."
+    description: "Quantum Automated Readout and Control (QUARC) pulse-synchronized graphical user interface."
+
   - name: Quantum-Engineering-and-Photonics/GUI_Quantum_Network_Simulator
-    description: "GUI-driven quantum network simulation and visualization utilities."
+    description: "Python-based graphical simulator for quantum network modeling and visualization."
+
   - name: Quantum-Engineering-and-Photonics/Quantum-Routing-Simulation
-    description: "Quantum routing simulation codebase for evaluating multi-hop entanglement distribution strategies."
+    description: "Quantum routing simulation tools for evaluating multi-hop entanglement distribution protocols."
 
 github_repos_contributed:
   - name: QuTech-Delft/QuREBB
-    description: "Contributions to QuTech’s quantum repeater / benchmark tooling (QuREBB)."
+    description: "Quantum Repeater Benchmarking and Blueprinting (QuREBB) tools developed at QuTech."
+
   - name: Farquhar13/relaqs
-    description: "Contributions to reinforcement-learning-based quantum control / synthesis tooling (relaqs)."
+    description: "Reinforcement-learning-based approaches for quantum control and quantum system optimization."
