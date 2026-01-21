@@ -13,7 +13,6 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 keywords:
 lang: en
 icon: QEP_favicon.png
-icon_light: QEP_logo_light.png
 
 
 url: https://QEP-StonyBrook.github.io # the base hostname & protocol for your site
