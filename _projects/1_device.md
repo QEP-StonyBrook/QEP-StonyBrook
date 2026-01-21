@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Device 1
-description: Diamond Quantum Sensor
+title: Diamond Quantum Sensor
+description: NV magnetometer for MagNav
 img: assets/img/main_QS.jpg
 importance:
 category: work
