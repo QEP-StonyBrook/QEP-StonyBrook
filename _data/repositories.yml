@@ -24,7 +24,8 @@ github_repos:
 
 github_repos_contributed:
   - name: QuTech-Delft/QuREBB
-    description: "Quantum Repeater Benchmarking and Blueprinting (QuREBB) tools developed at QuTech."
+    description: "Quantum Remote Entanglement Building Block (QuREBB) simulations for benchmarking and designing quantum repeater architectures."
 
   - name: Farquhar13/relaqs
-    description: "Reinforcement-learning-based approaches for quantum control and quantum system optimization."
+    description: "Python framework using reinforcement learning to optimize pulse-level quantum control for high-fidelity gate synthesis under noiseless and noisy conditions."
+
