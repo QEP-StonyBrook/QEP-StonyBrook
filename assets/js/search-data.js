@@ -76,9 +76,9 @@ ninja.data = [{
       },{id: "news-qep-website-opening",
           title: 'QEP website opening! 🎉',
           description: "",
-          section: "News",},{id: "projects-device-1",
-          title: 'Device 1',
-          description: "Diamond Quantum Sensor",
+          section: "News",},{id: "projects-diamond-quantum-sensor",
+          title: 'Diamond Quantum Sensor',
+          description: "NV magnetometer for MagNav",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_device/";
             },},];
