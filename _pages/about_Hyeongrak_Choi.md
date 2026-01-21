@@ -5,9 +5,3 @@ Hyeongrak Choi received his PhD in Electrical Engineering and Computer Science i
 PhD (Electrical Engineering and Computer Science), MIT (2021)\
 MS (Electrical Engineering and Computer Science), MIT (2017)\
 BS (Electrical Engineering and Computer Science), Seoul National University (2014)
-
-<div style="text-align: right;">
-  Office: Light Engineering 265 <br>
-  Email: hyeongrak.choi@stonybrook.edu <br>
-  Phone: (617)335-5420
-</div>
