@@ -1,22 +1,41 @@
 {% comment %}
   repo.liquid
   Input:
-    include.repository = "username/repository"
+    include.repository:
+      - String: "username/repository"
+      - OR Object:
+          name: "username/repository"
+          description: "Short description"
   Output:
-    Clickable repository name linking to GitHub
+    Clickable repository name with optional description
 {% endcomment %}
 
-{% assign repo_url = include.repository | split: '/' %}
+{% if include.repository.name %}
+  {% assign repo_full = include.repository.name %}
+  {% assign repo_description = include.repository.description %}
+{% else %}
+  {% assign repo_full = include.repository %}
+  {% assign repo_description = nil %}
+{% endif %}
+
+{% assign repo_url = repo_full | split: '/' %}
 {% assign repo_owner = repo_url[0] %}
 {% assign repo_name  = repo_url[1] %}
 
 <div class="repo p-2 text-center">
   <a
-    href="https://github.com/{{ include.repository }}"
+    href="https://github.com/{{ repo_full }}"
     target="_blank"
     rel="noopener noreferrer"
+    class="repo-name"
     aria-label="GitHub repository {{ repo_name }}"
   >
     {{ repo_name }}
   </a>
+
+  {% if repo_description %}
+    <div class="repo-description">
+      {{ repo_description }}
+    </div>
+  {% endif %}
 </div>
