@@ -31,10 +31,61 @@ body.sticky-bottom-footer {
   max-width: $max-content-width;
 }
 
-// Profile
+/******************************************************************************
+ * Profile / Team
+ ******************************************************************************/
+
+// Existing Profile image sizing
 .profile {
   img {
     width: 100%;
+  }
+}
+
+// Added: profiles layout to bottom-align contact info (used by modified profile.liquid)
+.profile-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.profile-image {
+  // keep image column stable; adjust as desired
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.profile-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.profile-text {
+  flex: 1 1 auto;
+}
+
+.profile-contact {
+  margin-top: auto;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+// Responsive: stack image above text on small screens
+@media (max-width: 576px) {
+  .profile-row {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+
+  .profile-contact {
+    text-align: left;
   }
 }
 
@@ -47,7 +98,7 @@ body.sticky-bottom-footer {
 // TODO: redefine publications layout.
 
 /*****************************************************************************
-* Projects
-*****************************************************************************/
+ * Projects
+ *****************************************************************************/
 
 // TODO: redefine projects layout.
