@@ -39,9 +39,37 @@
   line-height: 1.4;
 }
 
+/* Post header with right-aligned logo */
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.post-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-header-logo {
+  height: 56px;   /* adjust if needed */
+  width: auto;
+  flex-shrink: 0;
+}
+
 /* Mobile: stack vertically */
 @media (max-width: 900px) {
   .home-figures {
     grid-template-columns: 1fr;
+  }
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-header-logo {
+    align-self: flex-end;  /* keeps it right-aligned on mobile */
+    margin-top: 0.5rem;
   }
 }
