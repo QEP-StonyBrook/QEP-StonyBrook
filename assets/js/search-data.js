@@ -81,9 +81,9 @@ ninja.data = [{
           description: "NV magnetometer for MagNav",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_device/";
-            },},{id: "projects-diamond-quantum-sensor",
-          title: 'Diamond Quantum Sensor',
-          description: "NV magnetometer for MagNav",
+            },},{id: "projects-robot-microscope",
+          title: 'Robot Microscope',
+          description: "Automatic Characterization of a Large Number of Solid-State Qubits",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_device/";
             },},];
