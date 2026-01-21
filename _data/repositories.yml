@@ -3,7 +3,7 @@ github_users: Quantum-Engineering-and-Photonics
 repo_description_lines_max: 2
 
 github_repos:
-  - Q-CHARM
+  - Quantum-Engineering-and-Photonics/Q-CHARM
   - jekyll/jekyll
   - twbs/bootstrap
   - jquery/jquery
