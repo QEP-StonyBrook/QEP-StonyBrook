@@ -1,25 +1,22 @@
 /******************************************************************************
- * Profile / Team (scoped to profiles layout only)
+ * Profile / Team (scoped to profiles-page wrapper)
  ******************************************************************************/
 
-body.layout-profiles {
-  /* New flex row wrapper */
+.profiles-page {
   .profile-row {
     display: flex;
     align-items: stretch;
     gap: 1.5rem;
   }
 
-  /* Image column */
   .profile-image {
     flex: 0 0 30%;
     max-width: 30%;
   }
 
-  /* IMPORTANT: constrain wrapper + scale image */
   .profile-image figure {
     width: 100%;
-    margin: 0; // figure.liquid often wraps images in <figure>
+    margin: 0;
   }
 
   .profile-image img {
@@ -29,7 +26,6 @@ body.layout-profiles {
     max-width: 100%;
   }
 
-  /* Text column */
   .profile-content {
     flex: 1 1 auto;
     display: flex;
@@ -48,7 +44,6 @@ body.layout-profiles {
     color: #555;
   }
 
-  /* Responsive stacking */
   @media (max-width: 576px) {
     .profile-row {
       flex-direction: column;
