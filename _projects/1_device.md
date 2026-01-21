@@ -2,7 +2,7 @@
 layout: page
 title: Diamond Quantum Sensor
 description: NV magnetometer for MagNav
-img: assets/img/main_QS.jpg
+img: assets/img/Device1_Sensor.jpg
 importance:
 category: work
 related_publications: false
