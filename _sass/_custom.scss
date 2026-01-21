@@ -1,9 +1,55 @@
-/* Post header: text left, fixed logo column right */
+/* ================================
+   assets/css/_custom.scss
+   ================================ */
+
+/* -------- Home page: 4 × 1 figure grid -------- */
+
+.home-figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
+  grid-auto-rows: auto;
+  column-gap: 0.5rem;
+  align-items: start;
+  margin: 0;
+}
+
+/* Each figure occupies one column */
+.home-figure-card {
+  width: 100%;
+}
+
+/* Image fills its column (cropped, not squeezed) */
+.home-figure-card img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0.75rem;
+}
+
+/* Caption styling */
+.home-figure-caption {
+  margin-top: 0.75rem;
+}
+
+.home-figure-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.home-figure-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* -------- Post header: Title/subtitle left, logo column right -------- */
+
 .post-header {
   display: grid;
-  grid-template-columns: 1fr 160px; /* "111" area */
+  grid-template-columns: 1fr 160px; /* fixed "logo area" */
   column-gap: 1.25rem;
-  align-items: start;
+  align-items: start; /* aligns logo with top of title/subtitle block */
   width: 100%;
 }
 
@@ -12,30 +58,33 @@
 }
 
 .post-header-right {
-  justify-self: end;   /* right-align the "111" block */
+  justify-self: end; /* right-align within the logo column */
 }
 
 .post-header-logo {
-  width: 160px;        /* match the column width */
+  width: 160px;     /* match the logo column */
   height: auto;
-  max-height: 70px;    /* keeps it from becoming huge */
+  max-height: 70px; /* prevents oversized logo */
   object-fit: contain;
   display: block;
 }
 
-/* Mobile */
+/* -------- Responsive -------- */
+
 @media (max-width: 900px) {
+  /* Figures become 1 column */
   .home-figures {
     grid-template-columns: 1fr;
   }
 
+  /* Header stacks, logo stays right-aligned */
   .post-header {
-    grid-template-columns: 1fr; /* stack */
+    grid-template-columns: 1fr;
     row-gap: 0.35rem;
   }
 
   .post-header-right {
-    justify-self: end; /* keep logo right-aligned */
+    justify-self: end;
   }
 
   .post-header-logo {
