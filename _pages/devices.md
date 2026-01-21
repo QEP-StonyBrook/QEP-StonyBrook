@@ -7,30 +7,29 @@ nav_order: 4
 display_categories: 
 horizontal: false
 ---
-
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
+<!-- pages/devices.md -->
+<div class="devices">
+{% if site.enable_device_categories and page.display_categories %}
+  <!-- Display categorized devices -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
     <h2 class="category">{{ category }}</h2>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
+  {% assign categorized_devices = site.devices | where: "category", category %}
+  {% assign sorted_devices = categorized_devices | sort: "importance" %}
+  <!-- Generate cards for each device -->
   {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+    {% for device in sorted_devices %}
+      {% include devices_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
+    {% for device in sorted_devices %}
+      {% include devices.liquid %}
     {% endfor %}
   </div>
   {% endif %}
@@ -38,25 +37,25 @@ horizontal: false
 
 {% else %}
 
-<!-- Display projects without categories -->
+<!-- Display devices without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_devices = site.devices | sort: "importance" %}
 
-  <!-- Generate cards for each project -->
+  <!-- Generate cards for each device -->
 
 {% if page.horizontal %}
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
+    {% for device in sorted_devices %}
+      {% include devices_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
+    {% for device in sorted_devices %}
+      {% include devices.liquid %}
     {% endfor %}
   </div>
   {% endif %}
