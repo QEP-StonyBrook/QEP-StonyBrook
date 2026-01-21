@@ -77,10 +77,11 @@
     grid-template-columns: 1fr;
   }
 
-  /* Header stacks, logo stays right-aligned */
+  /* Keep the SAME 2-column header layout on mobile */
   .post-header {
-    grid-template-columns: 1fr;
-    row-gap: 0.35rem;
+    grid-template-columns: 1fr 120px; /* smaller "111" area on mobile */
+    column-gap: 0.75rem;
+    align-items: start;
   }
 
   .post-header-right {
@@ -88,7 +89,8 @@
   }
 
   .post-header-logo {
-    width: 140px;
-    max-height: 60px;
+    width: 120px;      /* match the mobile logo column */
+    max-height: 52px;  /* prevent oversized logo */
+    height: auto;
   }
 }
