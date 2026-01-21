@@ -4,9 +4,9 @@ repo_description_lines_max: 2
 
 github_repos:
   - Quantum-Engineering-and-Photonics/Q-CHARM
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Quantum-Engineering-and-Photonics/LoQRaS
+  - Quantum-Engineering-and-Photonics/LoQRaS-Stabilizer
+  - Quantum-Engineering-and-Photonics/QUARC
+  - Quantum-Engineering-and-Photonics/QUARC-PG
+  - Quantum-Engineering-and-Photonics/GUI_Quantum_Network_Simulator
+  - Quantum-Engineering-and-Photonics/Quantum-Routing-Simulation
