@@ -9,3 +9,7 @@ github_repos:
   - Quantum-Engineering-and-Photonics/QUARC-PG
   - Quantum-Engineering-and-Photonics/GUI_Quantum_Network_Simulator
   - Quantum-Engineering-and-Photonics/Quantum-Routing-Simulation
+
+github_repos_contributed:
+  - QuTech-Delft/QuREBB
+  - Farquhar13/relaqs
