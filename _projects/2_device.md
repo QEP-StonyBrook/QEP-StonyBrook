@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Diamond Quantum Sensor
-description: NV magnetometer for MagNav
-img: assets/img/main_QS.jpg
+title: Robot Microscope
+description: Automatic Characterization of a Large Number of Solid-State Qubits
+img: assets/img/Device2_RoMi.jpg
 importance:
 category: work
 related_publications: false
