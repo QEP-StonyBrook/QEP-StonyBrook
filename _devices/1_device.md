@@ -8,6 +8,6 @@ category: work
 related_publications: true
 ---
 
-to be published
+to be published.
 
 {% endraw %}
