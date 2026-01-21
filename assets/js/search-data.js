@@ -81,4 +81,9 @@ ninja.data = [{
           description: "NV magnetometer for MagNav",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_device/";
+            },},{id: "projects-diamond-quantum-sensor",
+          title: 'Diamond Quantum Sensor',
+          description: "NV magnetometer for MagNav",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_device/";
             },},];
