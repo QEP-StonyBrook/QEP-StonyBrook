@@ -4,3 +4,9 @@ Shaswata Mahernob Sarkar is a PhD student in Electrical Engineering at Stony Bro
 
 PhD (Electrical Engineering), Stony Brook University (2025-Present) \
 B.Sc. (Electrical and Electronic Engineering), Bangladesh University of Engineering and Technology (2024)
+
+<div style="text-align: right;">
+  Office: Light Engineering 150 <br>
+  Email: shaswatamahern.sarkar@stonybrook.edu <br>
+  Phone: (934)256-3787
+</div>
