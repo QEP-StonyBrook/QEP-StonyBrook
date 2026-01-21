@@ -78,7 +78,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-device-1",
           title: 'Device 1',
-          description: "with background image",
+          description: "Diamond Quantum Sensor",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_device/";
             },},];
