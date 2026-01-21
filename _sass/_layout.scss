@@ -1,60 +1,32 @@
 /******************************************************************************
- * Content
- ******************************************************************************/
-
-body {
-  padding-bottom: 70px;
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 66px;
-  }
-}
-
-body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 57px;
-}
-
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
-}
-
-.container {
-  max-width: $max-content-width;
-}
-
-/******************************************************************************
  * Profile / Team
  ******************************************************************************/
 
-// Existing Profile image sizing
-.profile {
-  img {
-    width: 100%;
-  }
-}
-
-// Added: profiles layout to bottom-align contact info (used by modified profile.liquid)
+/* New flex row wrapper */
 .profile-row {
   display: flex;
   align-items: stretch;
   gap: 1.5rem;
 }
 
+/* Image column */
 .profile-image {
-  // keep image column stable; adjust as desired
   flex: 0 0 30%;
   max-width: 30%;
 }
 
+/* IMPORTANT: actually scale the image (and figure wrapper) */
+.profile-image figure {
+  margin: 0;          // figure.liquid often wraps images in <figure>
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text column */
 .profile-content {
   flex: 1 1 auto;
   display: flex;
@@ -73,7 +45,7 @@ body.sticky-bottom-footer {
   color: #555;
 }
 
-// Responsive: stack image above text on small screens
+/* Responsive stacking */
 @media (max-width: 576px) {
   .profile-row {
     flex-direction: column;
@@ -88,17 +60,3 @@ body.sticky-bottom-footer {
     text-align: left;
   }
 }
-
-// TODO: redefine content layout.
-
-/******************************************************************************
- * Publications
- ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
- * Projects
- *****************************************************************************/
-
-// TODO: redefine projects layout.
