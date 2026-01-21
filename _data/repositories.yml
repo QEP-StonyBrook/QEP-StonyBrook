@@ -1,15 +1,24 @@
-github_users: Quantum-Engineering-and-Photonics
+github_users:
+  - Quantum-Engineering-and-Photonics
 
 repo_description_lines_max: 2
 
 github_repos:
-  - Quantum-Engineering-and-Photonics/Q-CHARM
-  - Quantum-Engineering-and-Photonics/LoQRaS
-  - Quantum-Engineering-and-Photonics/LoQRaS-Stabilizer
-  - Quantum-Engineering-and-Photonics/QUARC-PG
-  - Quantum-Engineering-and-Photonics/GUI_Quantum_Network_Simulator
-  - Quantum-Engineering-and-Photonics/Quantum-Routing-Simulation
+  - name: Quantum-Engineering-and-Photonics/Q-CHARM
+    description: "Room-temperature CLSM / micro-PL platform (hardware + MATLAB GUI) for rapid quantum-emitter characterization."
+  - name: Quantum-Engineering-and-Photonics/LoQRaS
+    description: "Lightweight QEC-aware routing and scheduling tools for long-distance quantum networks."
+  - name: Quantum-Engineering-and-Photonics/LoQRaS-Stabilizer
+    description: "Stabilizer-based simulation components used in LoQRaS for QEC-aware network analysis."
+  - name: Quantum-Engineering-and-Photonics/QUARC-PG
+    description: "Protocol and algorithm development for quantum-assisted routing/control (QUARC) workflows."
+  - name: Quantum-Engineering-and-Photonics/GUI_Quantum_Network_Simulator
+    description: "GUI-driven quantum network simulation and visualization utilities."
+  - name: Quantum-Engineering-and-Photonics/Quantum-Routing-Simulation
+    description: "Quantum routing simulation codebase for evaluating multi-hop entanglement distribution strategies."
 
 github_repos_contributed:
-  - QuTech-Delft/QuREBB
-  - Farquhar13/relaqs
+  - name: QuTech-Delft/QuREBB
+    description: "Contributions to QuTech’s quantum repeater / benchmark tooling (QuREBB)."
+  - name: Farquhar13/relaqs
+    description: "Contributions to reinforcement-learning-based quantum control / synthesis tooling (relaqs)."
