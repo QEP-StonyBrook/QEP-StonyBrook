@@ -8,6 +8,10 @@
   font-size: clamp(0.4em, 0.45em, 0.55em);
 }
 
+.desc {
+  font-size: 0.3em;
+}
+
 .home-figures {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
@@ -79,6 +83,10 @@
       
   .sbu-subtitle {
     font-size: clamp(0.4em, 2vw, 0.55em);
+  }
+
+  .desc {
+  font-size: 0.3em;
   }
    
   /* Figures become 1 column */
