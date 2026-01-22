@@ -4,6 +4,11 @@
 
 /* -------- Home page: 4 × 1 figure grid -------- */
 
+.sbu-subtitle {
+  font-size: clamp(0.6em, 2vw, 0.75em);
+  font-weight: 400;
+}
+
 .home-figures {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
