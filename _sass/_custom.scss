@@ -5,8 +5,7 @@
 /* -------- Home page: 4 × 1 figure grid -------- */
 
 .sbu-subtitle {
-  font-size: clamp(0.5em, 2vw, 0.63em);
-  font-weight: 400;
+  font-size: clamp(0.4em, 0.45em, 0.55em);
 }
 
 .home-figures {
@@ -77,6 +76,11 @@
 /* -------- Responsive -------- */
 
 @media (max-width: 900px) {
+      
+  .sbu-subtitle {
+    font-size: clamp(0.4em, 2vw, 0.55em);
+  }
+   
   /* Figures become 1 column */
   .home-figures {
     grid-template-columns: 1fr;
