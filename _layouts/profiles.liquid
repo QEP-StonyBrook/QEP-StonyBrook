@@ -5,48 +5,107 @@ layout: page
   <div class="post">
     <article>
       {% if page.profiles %}
-        {% for profile in page.profiles %}
-          <hr>
-
-          <div class="profile-row">
-
-            <!-- Profile image -->
-            <div class="profile-image">
-              {% if profile.image %}
-                {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                {% if profile.image_circular %}
-                  {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                {% else %}
-                  {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                {% endif %}
-                {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-              {% endif %}
-            </div>
-
-            <!-- Profile content (flex column) -->
-            <div class="profile-content">
-              {% if profile.content %}
-                {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                <div class="profile-text">
-                  {{ profile_content | markdownify }}
+      
+        {% assign role_order = "PI,PhD,MS,UG,Alumni" | split: "," %}
+        {% assign role_titles = "Principal Investigator,PhD Students,Master Students,Undergraduate Interns,Alumni" | split: "," %}
+      
+        {% for r in role_order %}
+          {% assign group = page.profiles | where: "role", r %}
+      
+          {% if group and group.size > 0 %}
+      
+            {% assign idx = forloop.index0 %}
+            <h2 class="team-section">{{ role_titles[idx] }}</h2>
+      
+            {% for profile in group %}
+              <hr>
+      
+              <div class="profile-row">
+      
+                <!-- Profile image -->
+                <div class="profile-image">
+                  {% if profile.image %}
+                    {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                    {% if profile.image_circular %}
+                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                    {% else %}
+                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                    {% endif %}
+                    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                    {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                  {% endif %}
                 </div>
-              {% else %}
-                <div class="profile-text">
-                  {{ content }}
+      
+                <!-- Profile content (flex column) -->
+                <div class="profile-content">
+                  {% if profile.content %}
+                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                    <div class="profile-text">
+                      {{ profile_content | markdownify }}
+                    </div>
+                  {% else %}
+                    <div class="profile-text">
+                      {{ content }}
+                    </div>
+                  {% endif %}
+      
+                  {% if profile.more_info %}
+                    <div class="profile-contact">
+                      {{ profile.more_info }}
+                    </div>
+                  {% endif %}
                 </div>
-              {% endif %}
-
-              {% if profile.more_info %}
-                <div class="profile-contact">
-                  {{ profile.more_info }}
-                </div>
-              {% endif %}
-            </div>
-
-          </div>
+      
+              </div>
+            {% endfor %}
+      
+          {% endif %}
         {% endfor %}
+      
+        {%- comment -%}
+        Optional: render any profiles missing a role at the bottom
+        {%- endcomment -%}
+        {% assign no_role = page.profiles | where_exp: "p", "p.role == nil or p.role == ''" %}
+        {% if no_role and no_role.size > 0 %}
+          <h2 class="team-section">Team</h2>
+          {% for profile in no_role %}
+            <hr>
+            <div class="profile-row">
+              <div class="profile-image">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  {% if profile.image_circular %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                  {% else %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                  {% endif %}
+                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                {% endif %}
+              </div>
+              <div class="profile-content">
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  <div class="profile-text">
+                    {{ profile_content | markdownify }}
+                  </div>
+                {% else %}
+                  <div class="profile-text">
+                    {{ content }}
+                  </div>
+                {% endif %}
+                {% if profile.more_info %}
+                  <div class="profile-contact">
+                    {{ profile.more_info }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      
       {% endif %}
+
     </article>
   </div>
 </div>
