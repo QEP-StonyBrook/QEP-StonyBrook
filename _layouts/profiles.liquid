@@ -50,7 +50,7 @@ layout: page
                         {% include_relative {{ profile.content }} %}
                       {% endcapture %}
                       <div class="profile-text">
-                        {{ profile_content }}
+                        {{ profile_content | markdownify }}
                       </div>
                     {% else %}
                       <div class="profile-text">
