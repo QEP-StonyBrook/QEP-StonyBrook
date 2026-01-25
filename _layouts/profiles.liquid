@@ -37,10 +37,15 @@ layout: page
                 </div>
       
                 <!-- Profile content (flex column) -->
+
                 <div class="profile-content">
                 
                   {% if profile.content %}
-                    {% if profile.content endswith ".md" %}
+                    {% assign content_name = profile.content | downcase %}
+                    {% assign parts = content_name | split: "." %}
+                    {% assign ext = parts | last %}
+                
+                    {% if ext == "md" %}
                       {% capture profile_content %}
                         {% include_relative {{ profile.content }} %}
                       {% endcapture %}
@@ -52,6 +57,7 @@ layout: page
                         {{ profile.content | markdownify }}
                       </div>
                     {% endif %}
+                
                   {% else %}
                     <div class="profile-text">
                       {{ content | markdownify }}
