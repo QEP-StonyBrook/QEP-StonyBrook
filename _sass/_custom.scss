@@ -73,9 +73,17 @@
   display: block;
 }
 
+.profile-text {
+   font-size: 0.4em;
+}
+
 /* -------- Responsive -------- */
 
 @media (max-width: 900px) {
+
+  .profile-text {
+   font-size: 0.4em;
+  }
       
   .sbu-subtitle {
     font-size: clamp(0.4em, 2vw, 0.55em);
