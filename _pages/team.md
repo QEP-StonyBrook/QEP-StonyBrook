@@ -6,7 +6,7 @@ nav: true
 nav_order: 1
 
 profiles:
-  - role: PI
+  - role: PI      #PI,PhD,MS,UG,Alumni
     align: left
     image: Hyeongrak_Choi.jpeg
     content: about_Hyeongrak_Choi.md
@@ -18,7 +18,7 @@ profiles:
         Phone: (617) 335-5420
       </div>
 
-  - role: PhD
+  - role: PhD      #PI,PhD,MS,UG,Alumni
     align: left
     image: Jie_Gu.jpeg
     content: about_Jie_Gu.md
@@ -30,7 +30,7 @@ profiles:
         Phone: (934) 451-9359
       </div>
 
-  - role: PhD
+  - role: PhD    #PI,PhD,MS,UG,Alumni
     align: left
     image: Shaswata_Mahernob_Sarkar.jpeg
     content: about_Shaswata_Mahernob_Sarkar.md
