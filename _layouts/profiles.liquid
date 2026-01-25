@@ -38,23 +38,34 @@ layout: page
       
                 <!-- Profile content (flex column) -->
                 <div class="profile-content">
+                
                   {% if profile.content %}
-                    {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                    <div class="profile-text">
-                      {{ profile_content | markdownify }}
-                    </div>
+                    {% if profile.content endswith ".md" %}
+                      {% capture profile_content %}
+                        {% include_relative {{ profile.content }} %}
+                      {% endcapture %}
+                      <div class="profile-text">
+                        {{ profile_content | markdownify }}
+                      </div>
+                    {% else %}
+                      <div class="profile-text">
+                        {{ profile.content | markdownify }}
+                      </div>
+                    {% endif %}
                   {% else %}
                     <div class="profile-text">
-                      {{ content }}
+                      {{ content | markdownify }}
                     </div>
                   {% endif %}
-      
+                
                   {% if profile.more_info %}
                     <div class="profile-contact">
                       {{ profile.more_info }}
                     </div>
                   {% endif %}
+                
                 </div>
+
                 <hr>
       
               </div>
