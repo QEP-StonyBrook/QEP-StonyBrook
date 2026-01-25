@@ -41,4 +41,10 @@ profiles:
         Email: shaswatamahern.sarkar@stonybrook.edu<br>
         Phone: (934) 256-3787
       </div>
+  - role: MS
+    align: left
+    content: Omonefe Itietie (2025-current)
+  - role: UG
+    align: left
+    content: Ryan Tiev (2024-current)
 ---
