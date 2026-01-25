@@ -15,7 +15,8 @@ nav_order: 5
 2026 Spring: ESE523 Quantum Computing and Applications
 
 ## Senior Designs
-* 2025 Fall
+
+* 2025 Fall (Senior Design 1)
   * Quantum Sensor
   * Quantum MASER
 
