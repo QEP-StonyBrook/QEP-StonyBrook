@@ -15,10 +15,10 @@ layout: page
           {% if group and group.size > 0 %}
       
             {% assign idx = forloop.index0 %}
+            <hr>
             <h2 class="team-section">{{ role_titles[idx] }}</h2>
       
             {% for profile in group %}
-              <hr>
       
               <div class="profile-row">
       
@@ -55,6 +55,7 @@ layout: page
                     </div>
                   {% endif %}
                 </div>
+                <hr>
       
               </div>
               <br>
