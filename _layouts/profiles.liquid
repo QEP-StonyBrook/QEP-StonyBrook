@@ -104,7 +104,7 @@ layout: page
               </div>
               <div class="profile-content">
                 {% if profile.content %}
-                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {%- capture profile_content -%}{% include_relative {{ profile.content }} %}{%- endcapture -%}
                   <div class="profile-text">
                     {{ profile_content | markdownify }}
                   </div>
