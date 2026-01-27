@@ -47,4 +47,7 @@ profiles:
   - role: UG
     align: left
     content: Ryan Tiev (2024-current)
+  - role: UG
+    align: left
+    content: Sean Lee (2025-current)
 ---
