@@ -10,29 +10,27 @@
 
 .home-figures {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 1 row, 4 columns */
-  grid-auto-rows: auto;
-  column-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
   align-items: start;
   margin: 0;
 }
 
-/* Each figure occupies one column */
 .home-figure-card {
   width: 100%;
 }
 
-/* Image fills its column (cropped, not squeezed) */
+/* Make images responsive to their grid cell (avoid fixed px sizing) */
 .home-figure-card img {
-  width: 350px;
-  height: 500px;
+  width: 100%;
+  aspect-ratio: 7 / 10;     /* similar visual proportion to 350×500 */
+  height: auto;
   object-fit: cover;
   object-position: center;
   display: block;
   border-radius: 0.75rem;
 }
 
-/* Caption styling */
 .home-figure-caption {
   margin-top: 0.75rem;
 }
@@ -40,21 +38,22 @@
 .home-figure-title {
   font-weight: 600;
   font-size: 1.2rem;
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.25rem 0;
 }
 
 .home-figure-text {
   font-size: 1.2rem;
   line-height: 1.4;
+  margin: 0; /* prevent markdownified <p> default margins from creating gaps */
 }
 
 /* -------- Post header: Title/subtitle left, logo column right -------- */
 
 .post-header {
   display: grid;
-  grid-template-columns: 1fr 160px; /* fixed "logo area" */
+  grid-template-columns: 1fr 160px;
   column-gap: 1.25rem;
-  align-items: start; /* aligns logo with top of title/subtitle block */
+  align-items: start;
   width: 100%;
 }
 
@@ -63,39 +62,59 @@
 }
 
 .post-header-right {
-  justify-self: end; /* right-align within the logo column */
+  justify-self: end;
 }
 
 .post-header-logo {
-  width: 160px;     /* match the logo column */
+  width: 160px;
   height: auto;
-  max-height: 70px; /* prevents oversized logo */
+  max-height: 70px;
   object-fit: contain;
   display: block;
 }
 
-.profile-text {
-   font-size: 1em;
-   line-height: 1.5;
-   bottom-margin: 0;
-}
+/* -------- Profiles page spacing + typography -------- */
 
+.profiles-page {
+  /* Ensures the horizontal rule between profiles doesn’t create large vertical gaps */
+  .profile-divider {
+    margin: 0.75rem 0;
+  }
+
+  /* Base text inside profile cards */
+  .profile-text {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  /* IMPORTANT: markdownify wraps text in <p>. Remove default margins to prevent extra spacing. */
+  .profile-text p {
+    margin: 0;
+  }
+
+  /* If you have multiple paragraphs inside bio/history and want separation, enable this:
+     .profile-text p + p { margin-top: 0.6rem; }
+  */
+
+  /* Optional: compact list-style entries (UG/MS content-only rows) */
+  .profile-row-compact {
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile-text-compact {
+    margin: 0;
+    line-height: 1.35;
+  }
+}
 
 /* -------- Responsive -------- */
 
 @media (max-width: 900px) {
-
-  .profile-text {
-   font-size: 1em;
-   line-height: 1.5;
-   bottom-margin: 0;
-  }
-
-   
   .sbu-subtitle {
     font-size: clamp(0.4em, 2vw, 0.55em);
   }
-   
+
   /* Figures become 1 column */
   .home-figures {
     grid-template-columns: 1fr;
@@ -103,7 +122,7 @@
 
   /* Keep the SAME 2-column header layout on mobile */
   .post-header {
-    grid-template-columns: 1fr 120px; /* smaller "111" area on mobile */
+    grid-template-columns: 1fr 120px;
     column-gap: 0.75rem;
     align-items: start;
   }
@@ -113,8 +132,8 @@
   }
 
   .post-header-logo {
-    width: 100px;      /* match the mobile logo column */
-    max-height: 100px;  /* prevent oversized logo */
+    width: 100px;
+    max-height: 100px;
     height: auto;
   }
 }
