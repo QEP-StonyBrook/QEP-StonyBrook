@@ -50,4 +50,16 @@ profiles:
   - role: UG
     align: left
     content: Sean Lee (2025-current)
+  - role: UG
+    align: left
+    content: Jordan Trojan (2025-current)
+  - role: UG
+    align: left
+    content: Janice Huang (2025-current)
+  - role: UG
+    align: left
+    content: Heng Lin (2025-current)
+  - role: UG
+    align: left
+    content: Jinhee Hong (2025-current)
 ---
