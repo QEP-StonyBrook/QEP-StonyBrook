@@ -5,125 +5,181 @@ layout: page
   <div class="post">
     <article>
       {% if page.profiles %}
-      
-        {% assign role_order = "PI,PhD,MS,UG,Alumni" | split: "," %}
+
+        {% assign role_order  = "PI,PhD,MS,UG,Alumni" | split: "," %}
         {% assign role_titles = "Principal Investigator,PhD Students,Master Students,Undergraduate Interns,Alumni" | split: "," %}
-      
+
         {% for r in role_order %}
           {% assign group = page.profiles | where: "role", r %}
-      
+
           {% if group and group.size > 0 %}
-      
             {% assign idx = forloop.index0 %}
+
             <hr>
             <h2 class="team-section">{{ role_titles[idx] }}</h2>
-      
-            {% for profile in group %}
-      
-              <div class="profile-row">
-      
-                <!-- Profile image -->
-                {% if profile.image %}
-                  <div class="profile-image">
-                    {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                    {% if profile.image_circular %}
-                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                    {% else %}
-                      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                    {% endif %}
-                    {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                    {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-                  </div>
-                {% endif %}
-      
-                <!-- Profile content (flex column) -->
 
-                <div class="profile-content">
-                
-                  {% if profile.content %}
-                    {% assign content_name = profile.content | downcase %}
-                    {% assign parts = content_name | split: "." %}
-                    {% assign ext = parts | last %}
-                
-                    {% if ext == "md" %}
-                      {% capture profile_content %}
-                        {% include_relative {{ profile.content }} %}
-                      {% endcapture %}
-                      <div class="profile-text">
-                        {{ profile_content | markdownify }}
-                      </div>
-                    {% else %}
-                      <div class="profile-text">
-                        &emsp; {{ profile.content | markdownify }}
+            {% for profile in group %}
+
+              {%- comment -%}
+              Render <hr> between items, but not before the first item.
+              This avoids "double line spacing" and the extra whitespace you saw.
+              {%- endcomment -%}
+              {% unless forloop.first %}
+                <hr class="profile-divider">
+              {% endunless %}
+
+              {%- comment -%}
+              Decide whether this is a "full card" (has name/bio/history/more_info/image)
+              or a "compact line" (content-only, e.g., UG list).
+              {%- endcomment -%}
+              {% assign has_full_fields = false %}
+              {% if profile.name or profile.bio or profile.history or profile.more_info or profile.image %}
+                {% assign has_full_fields = true %}
+              {% endif %}
+
+              {% if has_full_fields %}
+
+                <div class="profile-row">
+
+                  <!-- Profile image -->
+                  {% if profile.image %}
+                    <div class="profile-image">
+                      {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                      {% if profile.image_circular %}
+                        {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                      {% else %}
+                        {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                      {% endif %}
+                      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                      {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                    </div>
+                  {% endif %}
+
+                  <!-- Profile content -->
+                  <div class="profile-content">
+
+                    {% if profile.name %}
+                      <div class="profile-name">
+                        {{ profile.name }}
                       </div>
                     {% endif %}
-                
-                  {% else %}
-                    <div class="profile-text">
-                      {{ content | markdownify }}
-                    </div>
-                  {% endif %}
-                
-                  {% if profile.more_info %}
-                    <div class="profile-contact">
-                      {{ profile.more_info }}
-                    </div>
-                  {% endif %}
-                
+
+                    {% if profile.bio %}
+                      <div class="profile-text profile-bio">
+                        {{ profile.bio | markdownify }}
+                      </div>
+                    {% endif %}
+
+                    {% if profile.history %}
+                      <div class="profile-text profile-history">
+                        {{ profile.history | markdownify }}
+                      </div>
+                    {% endif %}
+
+                    {% if profile.more_info %}
+                      <div class="profile-contact">
+                        {{ profile.more_info | markdownify }}
+                      </div>
+                    {% endif %}
+
+                    {%- comment -%}
+                    Backward compatibility: if someone uses `content:` in a full profile.
+                    - Supports either "foo.md" include_relative OR inline markdown.
+                    {%- endcomment -%}
+                    {% if profile.content %}
+                      {% assign content_name = profile.content | downcase %}
+                      {% assign parts = content_name | split: "." %}
+                      {% assign ext = parts | last %}
+
+                      {% if ext == "md" %}
+                        {% capture profile_content %}
+                          {% include_relative {{ profile.content }} %}
+                        {% endcapture %}
+                        <div class="profile-text">
+                          {{ profile_content | markdownify }}
+                        </div>
+                      {% else %}
+                        <div class="profile-text">
+                          {{ profile.content | markdownify }}
+                        </div>
+                      {% endif %}
+                    {% endif %}
+
+                  </div>
                 </div>
 
-                <hr>
-      
-              </div>
+              {% else %}
+
+                {%- comment -%}
+                Compact entry (for UG/MS lists): avoids large whitespace and image grid.
+                {%- endcomment -%}
+                <div class="profile-row profile-row-compact">
+                  <div class="profile-content">
+                    <div class="profile-text profile-text-compact">
+                      {{ profile.content | markdownify }}
+                    </div>
+                  </div>
+                </div>
+
+              {% endif %}
+
             {% endfor %}
-      
           {% endif %}
         {% endfor %}
-      
+
         {%- comment -%}
-        Optional: render any profiles missing a role at the bottom
+        Optional: profiles missing role
         {%- endcomment -%}
         {% assign no_role = page.profiles | where_exp: "p", "p.role == nil or p.role == ''" %}
         {% if no_role and no_role.size > 0 %}
+          <hr>
           <h2 class="team-section">Team</h2>
+
           {% for profile in no_role %}
-            <hr>
+            {% unless forloop.first %}
+              <hr class="profile-divider">
+            {% endunless %}
+
             <div class="profile-row">
-              <div class="profile-image">
-                {% if profile.image %}
+              {% if profile.image %}
+                <div class="profile-image">
                   {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
                   {% if profile.image_circular %}
                     {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
                   {% else %}
                     {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
                   {% endif %}
-                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
                   {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-                {% endif %}
-              </div>
+                </div>
+              {% endif %}
+
               <div class="profile-content">
-                {% if profile.content %}
-                  {%- capture profile_content -%}{% include_relative {{ profile.content }} %}{%- endcapture -%}
-                  <div class="profile-text">
-                    {{ profile_content | markdownify }}
-                  </div>
-                {% else %}
-                  <div class="profile-text">
-                    {{ content }}
-                  </div>
+                {% if profile.name %}
+                  <div class="profile-name">{{ profile.name }}</div>
                 {% endif %}
+
+                {% if profile.bio %}
+                  <div class="profile-text profile-bio">{{ profile.bio | markdownify }}</div>
+                {% endif %}
+
+                {% if profile.history %}
+                  <div class="profile-text profile-history">{{ profile.history | markdownify }}</div>
+                {% endif %}
+
                 {% if profile.more_info %}
-                  <div class="profile-contact">
-                    {{ profile.more_info }}
-                  </div>
+                  <div class="profile-contact">{{ profile.more_info | markdownify }}</div>
+                {% endif %}
+
+                {% if profile.content %}
+                  <div class="profile-text">{{ profile.content | markdownify }}</div>
                 {% endif %}
               </div>
             </div>
           {% endfor %}
         {% endif %}
-      
-      {% endif %}
 
+      {% endif %}
     </article>
   </div>
 </div>
