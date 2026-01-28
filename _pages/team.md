@@ -16,9 +16,9 @@ profiles:
       </div>
       
     bio: |
-      <div>
+      <p>
         Hyeongrak Choi received his PhD in Electrical Engineering and Computer Science in 2021 from the Massachusetts Institute of Technology (MIT) under Prof. Dirk Englund. He earned his M.S. in the same field in 2017 from MIT, after receiving his B.S. in Electrical and Computer Engineering from Seoul National University in 2014. During his graduate studies, he was a recipient of both the <b>Claude E. Shannon Fellowship</b> and the <b>Samsung Scholarship</b>. After PhD, he continued as a postdoctoral associate at MIT until August 2024, when he started as an Assistant Professor in the Department of Electrical and Computer Engineering at Stony Brook University. His research focuses on quantum computing, networking, sensing, and photonics.
-      </div>
+      </p>
       
     history: |
       <div>
@@ -46,9 +46,9 @@ profiles:
       </div>
       
     bio: |
-      <div>
+      <p>
         Jie Gu is a PhD student in Computer Engineering at Stony Brook University. He holds a B.Sc. in Physics and an M.Sc. in Condensed Matter Physics from Nanjing University. Jie has an extensive research background in quantum information science, having co-authored numerous studies on quantum key distribution (QKD) and quantum secret sharing. His current research focuses on NV-based magnetometry and the characterization of quantum emitters through confocal scanning microscopy. Personally, he likes travelling and accompanying his 2 cats, Rei and Mei.
-      </div>
+      </p>
       
     history: |
       <div>
@@ -74,9 +74,9 @@ profiles:
       </div>
       
     bio: |
-      <div>
+      <p>
         Shaswata Mahernob Sarkar is a PhD student in Electrical Engineering at Stony Brook University, having started in Fall 2025. He earned his B.Sc. in Electrical and Electronic Engineering in 2024 from the Bangladesh University of Engineering and Technology (BUET), majoring in Communication and Signal Processing. His undergraduate thesis investigated the design of Enhanced Quantum Convolutional Neural Networks (QCNNs) with Effective Feature Processing Strategies for Image and Speech Data Classification, exploring the use of quantum computation principles to improve the performance of machine learning tasks. His current research focuses on integrated quantum information processors.
-      </div>
+      </p>
       
     history: |
       <div>
