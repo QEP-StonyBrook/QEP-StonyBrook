@@ -9,7 +9,6 @@ profiles:
   - role: PI      #PI,PhD,MS,UG,Alumni
     align: left
     image: Hyeongrak_Choi.jpeg
-    content: about_Hyeongrak_Choi.md
     image_circular: false
     name: |
       <div>
@@ -40,7 +39,6 @@ profiles:
   - role: PhD      #PI,PhD,MS,UG,Alumni
     align: left
     image: Jie_Gu.jpeg
-    content: about_Jie_Gu.md
     image_circular: false
     name: |
       <div>
@@ -69,7 +67,6 @@ profiles:
   - role: PhD    #PI,PhD,MS,UG,Alumni
     align: left
     image: Shaswata_Mahernob_Sarkar.jpeg
-    content: about_Shaswata_Mahernob_Sarkar.md
     image_circular: false
     name: |
       <div>
