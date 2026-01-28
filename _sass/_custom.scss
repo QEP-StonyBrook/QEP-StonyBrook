@@ -76,35 +76,30 @@
 /* -------- Profiles page spacing + typography -------- */
 
 .profiles-page {
-  /* Ensures the horizontal rule between profiles doesn’t create large vertical gaps */
-  .profile-divider {
-    margin: 0.75rem 0;
-  }
-
-  /* Base text inside profile cards */
+  /* common typography */
   .profile-text {
     font-size: 1em;
     line-height: 1.5;
   }
 
-  /* IMPORTANT: markdownify wraps text in <p>. Remove default margins to prevent extra spacing. */
-  .profile-text p {
+  /* Only remove paragraph margins where you need “tight” layout */
+  .profile-text-compact p {
     margin: 0;
   }
 
-  /* If you have multiple paragraphs inside bio/history and want separation, enable this:
-     .profile-text p + p { margin-top: 0.6rem; }
-  */
-
-  /* Optional: compact list-style entries (UG/MS content-only rows) */
-  .profile-row-compact {
-    margin: 0;
-    padding: 0;
+  /* For bio/history, keep nice readable spacing */
+  .profile-bio p,
+  .profile-history p {
+    margin: 0.6rem 0 0 0;
   }
 
-  .profile-text-compact {
-    margin: 0;
-    line-height: 1.35;
+  .profile-bio p:first-child,
+  .profile-history p:first-child {
+    margin-top: 0;
+  }
+
+  .profile-divider {
+    margin: 0.75rem 0;
   }
 }
 
